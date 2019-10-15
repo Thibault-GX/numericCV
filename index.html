@@ -1,88 +1,147 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang=fr dir="ltr">
 <head>
   <meta charset="utf-8">
+  <!--meta for responsive design-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Thibault Grimoux - Resume</title>
+  <!-- Bootstrap link must always come before any other CCS link. -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Now, it's ok to insert an other CCS link. -->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-  <title>Thibault Grimoux - A Web Dev Resume</title>
-</head>
-<body>
-  <h1>Thibault Grimoux - Web Developper</h1>
-  <!-- Personnal introduction, will have to include picture and background -->
-  <div>
-    <h2>About me</h2>
-    <p>I am a junior web developper. Always trying to improve my front-end experience and adding new techniques to the ones I already developped. I am used to team work and will be quite happy of being able to cooperate with teammates who wish to improve their projects and skills.</p>
-  </div>
-  <img class="personnalPicture" src="assets/img/personnalPicture.jpg" alt="Thibault Grimoux personnal picture">
-  <div>
-    <h2>Details</h2>
-    <p>
-      Name:
-      Thibault Grimoux
-      <br>
-      Age:
-      <!-- should include a script to auto-adjust the age --> years
-      <br>
-      Location:
-      Amiens, France, Earth, Solar System, Milky Way, Known Universe
-    </p>
-  </div>
-
-  <button class="trigger">Training & Diplomas</button>
-  <div class="modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <ul>
-        <li>2019 . Started a Web and Mobile Web intensive training (805 hours) under the direction of La MANU, France, Amiens.</li>
-        <hr>
-        <li>2019 . Participation in a Start Up week-end in Valenciennes, France. Awarded "Best Driver" in the round-trips section by his fellow comrades.</li>
-        <hr>
-        <li>2016 . Got a state contest (CRPE : Concours de Recrutement de Professeur des Ecoles) that gave me some credits in the domain of teaching things to others as long as they are aged from 3 to 10 years old.</li>
-        <hr>
-        <li>2014 . Started a training in the MEEF domain (Métiers de l'Enseignement, de l'Education et de la Formation).</li>
-        <hr>
-        <li>2014 . Got a degree in Arts' History and Practices, did not make me a professional painter, but got me some all-rounder skills for physical and numeric artworks.</li>
-        <hr>
-        <li>2010 . Started a degree in Art's History and Practices after a baccalaureate specialised in litterature and arts.</li>
-      </ul>
+  <body>
+    <h1 class="text-center">Thibault Grimoux - Web Developper</h1>
+    <!-- Personnal introduction, will have to include picture and background -->
+    <div class="container">
+      <div class="card mb-3" id="introductionBackground">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="assets/img/personalPictureSmall.png" class="card-img" alt="Personal picture">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">Introduction</h2>
+              <p class="card-text">I am a junior web developper. Always trying to improve my front-end experience and adding new techniques to the ones I have already developped. I am used to team work and will be quite happy of being able to cooperate with teammates who wish to improve their projects and skills.</p>
+              <hr>
+              <h2 class="card-title">Details</h2>
+              <p class="card-text">
+                Full name: Thibault Grimoux
+                <br>
+                Age: 27
+                <br>
+                Location: Amiens, France, Earth, Solar System, Milky Way, Known Universe
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-around">
+        <!-- Skills button -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#skillsModal">
+          Skills
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="skillsModal" tabindex="-1" role="dialog" aria-labelledby="skillsModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="skillsModal">Skills</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>Teaching</li>
+                  <li>Fast learning</li>
+                  <li>Management</li>
+                  <li>Good interpersonal skills</li>
+                  <li>Bad puns and dark humor master (useful to create some silence when needed, for instance: What's the most moving thing in a relationship between two leprous people ? That's when they try to stick the pieces back.).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Skills button -->
+        <!-- Diplomas and trainings -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#diplomasModal">
+          Diplomas and trainings
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="diplomasModal" tabindex="-1" role="dialog" aria-labelledby="diplomasModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="diplomasModal">Diplomas and trainings</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>2019 . Started a Web and Mobile Web intensive training (805 hours) under the direction of La MANU, France, Amiens.</li>
+                  <li>2019 . Participation in a Start Up week-end in Valenciennes, France. Awarded "Best Driver" in the round-trips section by his fellow comrades.</li>
+                  <li>2016 . Got a state contest (CRPE : Concours de Recrutement de Professeur des Ecoles) that gave me some credits in the domain of teaching things to others as long as they are aged from 3 to 10 years old.</li>
+                  <li>2014 . Started a training in the MEEF domain (Métiers de l'Enseignement, de l'Education et de la Formation).</li>
+                  <li>2014 . Got a degree in Arts' History and Practices, did not make me a professional painter, but got me some all-rounder skills for physical and numeric artworks.</li>
+                  <li>2010 . Started a degree in Art's History and Practices after a baccalaureate specialised in litterature and arts.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Diplomas and trainings -->
+        <!-- Professional experiences -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#experiencesModal">
+          Professional experiences
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="experiencesModal" tabindex="-1" role="dialog" aria-labelledby="experiencesModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="experiencesModal">Professional experiences</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- text -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Professional Experiences -->
+        <!-- Hobbies -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#hobbiesModal">
+          Hobbies
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="hobbiesModal" tabindex="-1" role="dialog" aria-labelledby="hobbiesModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="hobbiesModal">Hobbies</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- text -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Hobbies -->
+      </div>
     </div>
-  </div>
-  <button class="trigger">Skills</button>
-  <div class="modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <ul>
-        <li>Teaching</li>
-        <li>Fast learning</li>
-        <li>Management</li>
-        <li>Good interpersonal skills</li>
-        <li>Bad puns and dark humor master (useful to create some silence when needed, for instance: What's the most moving thing in a relationship between two leprous people ? That's when they try to stick the pieces back.).</li>
-      </ul>
-    </div>
-  </div>
-
-  <button class="trigger">Professional Experiences</button>
-  <div class="modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <p>Hello, I am a modal!</p>
-    </div>
-  </div>
-
-  <button class="trigger">Hobbies</button>
-  <div class="modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <p>Hello, I am a modal!</p>
-    </div>
-  </div>
-
-  <button class="trigger">Contact</button>
-  <div class="modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <p>Hello, I am a modal!</p>
-    </div>
-  </div>
-  <script src="assets/js/javaScript.js"></script>
-</body>
-</html>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  </html>
