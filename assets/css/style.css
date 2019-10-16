@@ -1,12 +1,31 @@
 #introductionBackground {
   background-color: #87ba87;
+}
+.backgroundPicture {
+  background-color: #939393;
+}
+@media screen and (min-width: 576px) {
+  .adaptiveColumn {
+    flex-direction: column;
+  }
+}
+/* icons styling */
+.githubColor {
+  color: #24292E;
+}
+.linkedInColor {
+  color: #0077B5;
+}
+.gmailColor {
+  color: #D54B3D;
+}
 /* lists styling */
-li::before {
-content: '';
-position: absolute;
-background-color: rgba(0, 0, 0, 0.3);
-width: 80%;
-height: 1px;
+ul li:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 80%;
+  height: 1px;
 }
 .skillsList {
   background: #7abaff;
