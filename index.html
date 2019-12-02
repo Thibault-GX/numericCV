@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Now, it's ok to insert an other CCS link. -->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-  <body class="backgroundPicture">
+  <body class="introductionBackground">
     <h1 class="text-center">Thibault Grimoux - Junior Web Developper</h1>
     <!-- Personnal introduction, will have to include picture and background -->
     <div class="container">
-      <div class="card mb-3" id="introductionBackground">
+      <div class="card mb-3" id="mainBackground">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="assets/img/personalPictureSmall.png" class="card-img" alt="Personal picture">
+            <img src="assets/img/personalPictureSmall.png" class="card-img personalPicture" alt="Personal picture">
           </div>
           <div class="col-md-7">
             <div class="card-body">
@@ -35,9 +35,9 @@
             </div>
           </div>
           <div class="col-sm-1 d-flex justify-content-around adaptiveColumn">
-            <a href="https://www.linkedin.com/in/thibault-grimoux-168335196/" target="_blank" class="linkedInColor"><i class="fab fa-linkedin" style="font-size: 3em"></i></a>
-            <a href="https://github.com/Thibault-GX" target="_blank" class="githubColor"><i class="fab fa-github-square" style="font-size: 3em"></i></a>
-            <a href="mailto:thibault.grimoux@gmail.com?subject=Contact%20from%20numeric%20CV" target="_blank" class="gmailColor"><i class="far fa-envelope" style="font-size: 3em"></i></a>
+            <a href="https://www.linkedin.com/in/thibault-grimoux-168335196/" target="_blank" class="linkedInColor"><i class="fab fa-linkedin fa-3x iconsShadow"></i></a>
+            <a href="https://github.com/Thibault-GX" target="_blank" class="githubColor"><i class="fab fa-github-square fa-3x iconsShadow"></i></a>
+            <a href="mailto:thibault.grimoux@gmail.com?subject=Contact%20from%20numeric%20CV" target="_blank" class="gmailColor"><i class="far fa-envelope fa-3x iconsShadow"></i></a>
           </div>
         </div>
       </div>
@@ -51,14 +51,14 @@
         <!-- Modal -->
         <div class="modal fade" id="skillsModal" tabindex="-1" role="dialog" aria-labelledby="skillsModal" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
+            <div class="modal-content text-light">
+              <div class="modal-header bg-primary" style="border-bottom-width: 0px;">
                 <h2 class="modal-title">Skills</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body bg-primary">
                 <ul>
                   <li>Teaching</li>
                   <li>Fast learning</li>
@@ -79,21 +79,21 @@
         <!-- Modal -->
         <div class="modal fade" id="diplomasModal" tabindex="-1" role="dialog" aria-labelledby="diplomasModal" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
+            <div class="modal-content text-light">
+              <div class="modal-header bg-secondary" style="border-bottom-width: 0px;">
                 <h2 class="modal-title">Diplomas and trainings</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body bg-secondary">
                 <ul>
-                  <li>2019 . Started a Web and Mobile Web intensive training (805 hours) under the direction of La MANU, France, Amiens.</li>
-                  <li>2019 . Participation in a Start Up week-end in Valenciennes, France. Awarded "Best Driver" in the round-trips section by his fellow comrades.</li>
-                  <li>2016 . Got a state contest (CRPE : Concours de Recrutement de Professeur des Ecoles) that gave me some credits in the domain of teaching things to others as long as they are aged from 3 to 10 years old.</li>
-                  <li>2014 . Started a training in the MEEF domain (Métiers de l'Enseignement, de l'Education et de la Formation).</li>
-                  <li>2014 . Got a degree in Arts' History and Practices, did not make me a professional painter, but got me some all-rounder skills for physical and numeric artworks.</li>
-                  <li>2010 . Started a degree in Art's History and Practices after a baccalaureate specialised in litterature and arts.</li>
+                  <li>2019 - Started a Web and Mobile Web intensive training (805 hours) under the direction of La MANU, France, Amiens.</li>
+                  <li>2019 - Participation in a Start Up week-end in Valenciennes, France. Was in the team ranked 1rst place for the Vaibes project.</li>
+                  <li>2016 - Got a state contest (CRPE : Concours de Recrutement de Professeur des Ecoles) that gave me some credits in the domain of teaching things to others as long as they are aged from 3 to 10 years old.</li>
+                  <li>2014 - Started a training in the MEEF domain (Métiers de l'Enseignement, de l'Education et de la Formation).</li>
+                  <li>2014 - Got a degree in Arts' History and Practices, did not make me a professional painter, but got me some all-rounder skills for physical and numeric artworks.</li>
+                  <li>2010 - Started a degree in Art's History and Practices after a baccalaureate specialised in litterature and arts.</li>
                 </ul>
               </div>
             </div>
@@ -109,27 +109,27 @@
         <!-- Modal -->
         <div class="modal fade" id="experiencesModal" tabindex="-1" role="dialog" aria-labelledby="experiencesModal" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
+            <div class="modal-content text-light">
+              <div class="modal-header bg-danger" style="border-bottom-width: 0px;">
                 <h2 class="modal-title">Professional experiences</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body bg-danger">
                 <ul>
-                  <li>April to August 2019 . Seller in the Tabac-Presse du château in Gordes, France</li>
-                  <li>April to August and November 2018 . Seller in the Tabac-Presse du château in Gordes, France</li>
-                  <li>March 2018 to January 2019 . Writer, corrector and tester for the website LightninGamer</li>
-                  <li>April to November 2017 . Waiter in the restaurant Casa Rosario Sarl in Gordes, France</li>
-                  <li>September 2016 to February 2017 . School teacher in Beauvais, France</li>
-                  <li>Summer 2016 . Seller in the bakery Le Fournil de Mamie Jeanne in Gordes, France</li>
-                  <li>Summer 2014 . Warehouseman for Jouffruit Sarl in Cavaillon, France</li>
-                  <li>March 2011 to September 2013 . Writer, corrector and tester for the website GAMERGen</li>
-                  <li>Summer 2013 . Recreation center animator in La Chaussé-Tirancourt, France</li>
-                  <li>Summer 2012 . Cashier for Intermarché supermarket in
+                  <li>April to August 2019 - Seller in the Tabac-Presse du château in Gordes, France</li>
+                  <li>April to August and November 2018 - Seller in the Tabac-Presse du château in Gordes, France</li>
+                  <li>March 2018 to January 2019 - Writer, corrector and tester for the website LightninGamer</li>
+                  <li>April to November 2017 - Waiter in the restaurant Casa Rosario Sarl in Gordes, France</li>
+                  <li>September 2016 to February 2017 - School teacher in Beauvais, France</li>
+                  <li>Summer 2016 - Seller in the bakery Le Fournil de Mamie Jeanne in Gordes, France</li>
+                  <li>Summer 2014 - Warehouseman for Jouffruit Sarl in Cavaillon, France</li>
+                  <li>March 2011 to September 2013 - Writer, corrector and tester for the website GAMERGen</li>
+                  <li>Summer 2013 - Recreation center animator in La Chaussé-Tirancourt, France</li>
+                  <li>Summer 2012 - Cashier for Intermarché supermarket in
                     Isle-sur-la-Sorgue, France</li>
-                    <li>Summer 2011 . Cashier for Intermarché supermarket in
+                    <li>Summer 2011 - Cashier for Intermarché supermarket in
                       Isle-sur-la-Sorgue, France</li>
                     </ul>
                   </div>
@@ -147,16 +147,17 @@
             <div class="modal fade" id="hobbiesModal" tabindex="-1" role="dialog" aria-labelledby="hobbiesModal" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                  <div class="modal-header">
+                  <div class="modal-header bg-warning" style="border-bottom-width: 0px;">
                     <h2 class="modal-title">Hobbies and community life</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body">
+                  <div class="modal-body bg-warning">
                     <ul>
-                      <li>Started praticing Kendo in 2019</li>
-                      <li>Vice-president of the non-profit organization Match Up since 2018</li>
+                      <li>2019 - Started practicing Kendo</li>
+                      <li>Since 2018 - Vice-president of the non-profit organization Match Up</li>
+                      <li>2019 - Helped setting up and animate an extracurricular activity along the city hall's services to present old video games to children aged from 6 to 10 during the first semester of the year</li>
                     </ul>
                   </div>
                 </div>
@@ -166,21 +167,31 @@
           </div>
           <!-- End of modals -->
           <!-- Progress bars debut -->
-          <i class="d-flex justify-content-center fab fa-html5 fa-3x"></i>
+          <div class="row w-100 p-1"></div>
+          <i class="d-flex justify-content-center fab fa-html5 fa-3x html5Color iconsShadow"></i>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 41%" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <div class="row w-100 p-1"></div>
-          <i class="d-flex justify-content-center fab fa-css3 fa-3x"></i>
+          <i class="d-flex justify-content-center fab fa-css3 fa-3x css3Color iconsShadow"></i>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 41%" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <div class="row w-100 p-1"></div>
-          <i class="d-flex justify-content-center fab fa-bootstrap fa-3x"></i>
+          <i class="d-flex justify-content-center fab fa-bootstrap fa-3x bootstrapColor iconsShadow"></i>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 41%" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <div class="row w-100 p-1"></div>
+          <i class="d-flex justify-content-center fab fa-js-square fa-3x javascriptColor iconsShadow"></i>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="row w-100 p-1"></div>
+          <i class="d-flex justify-content-center fab fa-wordpress fa-3x wordpressColor iconsShadow"></i>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
           <!-- Progress bars end -->
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
