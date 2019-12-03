@@ -7,10 +7,8 @@
 }
 
 .personalPicture {
-  max-height: 40vh;
+  max-height: 20rem;
   object-fit: contain;
-  margin: auto;
-  margin-top: 5vh;
 }
 
 /* icons styling */
