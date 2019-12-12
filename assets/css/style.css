@@ -1,14 +1,14 @@
-#mainBackground {
+#introBackground {
   background-color: #87ba87;
+}
+#mainBackground {
+  background-color: #939393;
 }
 body {
   font-family: 'Capriola', sans-serif;
 }
 #xavierDang {
   font-family: 'Pacifico', cursive;
-}
-.introductionBackground {
-  background-color: #939393;
 }
 .personalPicture {
   max-height: 20rem;
@@ -68,9 +68,7 @@ li {
   margin: 1rem;
 }
 /* Bootstrap classes adjustments */
-.modal {
-  border-radius: 20px;
-}
+
 /* media query */
 @media screen and (min-width: 768px) {
   .adaptiveColumn {
