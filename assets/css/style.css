@@ -1,8 +1,8 @@
 #introBackground {
-  background-color: #87ba87;
+  background-color: #808487;
 }
 #mainBackground {
-  background-color: #939393;
+  background-color: #3f3f3f;
 }
 body {
   font-family: 'Capriola', sans-serif;
@@ -62,6 +62,12 @@ body {
 }
 #bgPHP {
   background-color: #7B70B5;
+}
+.diplomasBG {
+  background-color: #008e49;
+}
+.professionalBG {
+  background-color: #750009;
 }
 /* lists styling */
 li {
