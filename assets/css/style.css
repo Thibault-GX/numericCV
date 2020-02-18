@@ -63,8 +63,15 @@ body {
 #bgPHP {
   background-color: #7B70B5;
 }
+#MySQL {
+  max-height: 3rem;
+  margin-left: 40vw;
+}
+#bgMySQL {
+  background-color: ##00546D;
+}
 .diplomasBG {
-  background-color: #008e49;
+  background-color: #00758F;
 }
 .professionalBG {
   background-color: #750009;
