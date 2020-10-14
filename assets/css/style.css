@@ -1,8 +1,8 @@
 #introBackground {
-  background-color: #808487;
+  background-color: #1a9173;
 }
 #mainBackground {
-  background-color: #3f3f3f;
+  background-color: #3ec1a3;
 }
 body {
   font-family: 'Capriola', sans-serif;
@@ -76,6 +76,17 @@ body {
 .professionalBG {
   background-color: #750009;
 }
+.flag {
+  max-width: 4%;
+  max-height: 4%;
+  min-width: 40px;
+  min-height: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  left: 87vw;
+  z-index: 999;
+}
 /* lists styling */
 li {
   margin: 1rem;
@@ -83,7 +94,7 @@ li {
 /* Bootstrap classes adjustments */
 
 /* media query */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .adaptiveColumn {
     flex-direction: column;
   }
